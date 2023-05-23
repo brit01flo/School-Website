@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="/styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <title>About-Us Page</title>
+</head>
+
+<body>
+    <nav class="navbarp d-flex justify-content-center pt-5">
+        <div class="logo">
+            <a href="/index.html"><img src="/images/schoolLogo.png" alt="Mzamomtsha Primary School logo"></a>
+        </div>
+
+        <ul class="nav-links-1">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu-1">
+                <li><a class="nav-link1" href="/index.html">Home</a></li>
+                <li><a class="nav-link1" href="/pages/aboutUsPage.html" style="color: white; font-style:italic;">About</a></li>
+                <li><a class="nav-link1" href="/pages/eventsPage.html">Events</a></li>
+                <li><a class="nav-link1" href="/pages/faqPage.html">FAQ</a></li>
+                <li><a class="nav-link1" href="/pages/contactUsPage.html">Contact-Us</a></li>
+                <li><a href="/pages/GamingPage.html">Gaming</a></li>
+                <li><a class="nav-link1" href="/pages/donatePage.html" class="dontate-button">Donate</a></li>
+                <li><a href="/pages/Login page.html">Login</a></li>
+            </div>
+        </ul>
+    </nav>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card g-3" style="height:200px;width:300px">
+                    <img class=" card-img-top"
+                        src="https://priceless-northcutt-b868c1.netlify.app/content/images/grounds2.jpg"
+                        class="img-thumbnail img-fluid" id="yourImgId" alt="Card image">
+                </div>
+                <div class="card-img" style="width: 300px;">
+                    <div class="card-img">
+                        <h4 class="card-title" style="color: black;">About Us</h4>
+                        <div id="moreText" style="display:none;color:white; background-color: rgb(36, 104, 167)">
+                            <p style="padding: 15px;">The Mzamomtsha Primay School was established in 2008 in driftsand
+                                city of cape town.The school was initially created for primary school students from
+                                grade 1 to grade 7, but due to the rapid population growth the school is also enrolling
+                                higher grades.Students are allowed up to grade 12 - which is the metric year.The
+                                Mzamomtsha Primary School attracts and produces some of the country’s best students
+                                minds, making it the first choice for many individuals seeking to pursue a high level
+                                education in the township location. Housed within our higest grades major subject such
+                                as: Physical Science, Pure Maths, Accounting and Life Science.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <button onclick="expandText()" class="abtn-button" style="width: 300px;">Read More</button>
+            </div>
+            <div class="col">
+                <div class="card g-3" style="height:200px;width:300px">
+                    <img class=" card-img-top"
+                        src="https://priceless-northcutt-b868c1.netlify.app/content/images/pri.jpg"
+                        class="img-thumbnail img-fluid" id="yourImgId1" alt="Card image">
+                </div>
+                <div class="card-img" style="width: 300px;">
+                    <h4 class="card-title" style="color:black;">The Principle</h4>
+                    <div id="moreText1" style="display:none;color:white; background-color: rgb(36, 104, 167);">
+                        <p style=" padding: 15px;">MR Simphiwe Khuze was born on the 13th of March 1972. He was born
+                            and raised in Middleburg, Eastern Cape. He studied his primary years at Mchobololo
+                            Primary School in the Eastern Cape and served his high school years at Archie Velile
+                            Senior Secondary where his passion for teaching begin.</p>
+                    </div>
+                </div>
+                <button onclick="expandText1()" class="abtn-button" style="width: 300px;">Read More</button>
+            </div>
+            <div class="col">
+                <div class="card g-3" style="height:200px;width:300px">
+                    <img class="card-img-top"
+                        src="https://priceless-northcutt-b868c1.netlify.app/content/images/staff.jpg"
+                        class="img-thumbnail img-fluid" id="yourImgId2" alt="Card image">
+                </div>
+                <div class="card-img" style="width: 300px;">
+                    <h4 class="card-title" style="color:black;">Teaching Staff</h4>
+                    <div id="moreText2" style="display:none;color:white; background-color: rgb(36, 104, 167);">
+                        <p style=" padding:15px;">The School’s teaching philosophy is underpinned by a strong
+                            commitment to exposing students to both the theoretical and practical aspects of
+                            learning, and our lectured teaching is complemented by teaching students in their home
+                            languages. Facilitated in smaller groups, classes are highly interactive and students
+                            are given a unique opportunity to understand in depth and put in practise the theory to
+                            which they have been exposed to in lectures.</p>
+                    </div>
+                </div>
+                <button onclick="expandText2()" class="abtn-button" style="width: 300px;">Read More</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function expandText() {
+            var moreText = document.getElementById("moreText");
+            if (moreText.style.display === "none") {
+                moreText.style.display = "block";
+            } else {
+                moreText.style.display = "none";
+            }
+        }
+        function expandText1() {
+            var moreText = document.getElementById("moreText1");
+            if (moreText.style.display === "none") {
+                moreText.style.display = "block";
+            } else {
+                moreText.style.display = "none";
+            }
+        }
+        function expandText2() {
+            var moreText = document.getElementById("moreText2");
+            if (moreText.style.display === "none") {
+                moreText.style.display = "block";
+            } else {
+                moreText.style.display = "none";
+            }
+        }
+
+
+        /*var img = document.createElement("img");
+        img.src = "";
+        var src = document.getElementById("myImg");
+        src.appendChild(img);*/
+
+    var yourImg = document.getElementById('yourImgId');
+        if (yourImg && yourImg.style) {
+            yourImg.style.height = '200px';
+            yourImg.style.width = '300px';
+        }
+    var yourImg = document.getElementById('yourImgId1');
+        if (yourImg && yourImg.style) {
+            yourImg.style.height = '200px';
+            yourImg.style.width = '300px';
+        }
+    var yourImg = document.getElementById('yourImgId2');
+        if (yourImg && yourImg.style) {
+            yourImg.style.height = '200px';
+            yourImg.style.width = '300px';
+        }
+    </script>
+
+    <div class="mission-container">
+        <h2 class="mission-header">OUR MISSION</h2>
+        <div class="mission-container-content">
+            <p>Our mission is to create a safe atmosphere in which effective learning and teaching can take place.
+                We
+                provide physical and recruit the best human resources to compliment learning. We engage in staff
+                development programmes that will set our staff apart as good role models of the profession. We
+                collaborate with parents, the community and the business sector in order to support the learning
+                programmes, and we teach our leaners values that will make them complete citizens.</p>
+        </div>
+    </div>
+    <div class="mission-container">
+        <h2 class="mission-header">OUR VISION</h2>
+
+        <div class="mission-container-content">
+            <p>At Mzamomtsha Primary School we are committed to empower every learner in our school to be
+                innovative,
+                impactful and independent inidividuals who will grow academically and contribute positively to the
+                upliftment of their community to take up a meaningful and productive position in society.</p>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+
+        <div class="address bx">
+            <h3 class="block-1"><i class="fa-sharp fa-solid fa-location-dot"></i> Physical Address</h3>
+            <p>49 Valangentambo Street</p>
+            <p>Driftsands</p>
+            <p>Cape Town</p>
+            <p>7100</p>
+            <p>Western Cape</p>
+            <p>South Africa </p>
+        </div>
+        <div class="contact-details bx">
+            <h3 class="block-1"><i class="fa-solid fa-address-card"></i> Contact Details</h3>
+            <p><i class="fa fa-phone"></i> 021 328 3932</p>
+            <p><i class="fa fa-envelope"></i> office@mzamomtsha.co.za</p>
+        </div>
+        <div class="social-media bx">
+            <h3 class="block-1"><i class="fa-solid fa-comments"></i> Social Media:</h3>
+            <p><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></p>
+            <p><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></p>
+            <p><a href="#"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a></p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

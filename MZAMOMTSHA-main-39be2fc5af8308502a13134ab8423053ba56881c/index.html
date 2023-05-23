@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+        <!-- styles -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="/styles/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        
+    </head>
+    <style>
+        * {box-sizing: border-box;}
+        body {font-family: Verdana, sans-serif;}
+        .mySlides {
+            display: none;
+          
+        }
+        .img-slide{
+            width:100vw; 
+            height: 100vh - 154px;
+            /* background-color: rgba(0, 0, 0, 0.429); */
+            /* opacity: 0.3; */
+
+        }
+
+        .infor-sty{
+            /* color: rgb(28, 128, 135); */
+            color: rgb(255, 255, 255);
+        }
+
+        .img-slide-d{
+            width:100vw; 
+            height: 600px;
+            object-fit: cover;
+            background-image: linear-gradient(rgb(66, 62, 62), rgb(0, 10, 0));
+
+        }
+        
+        /* Slideshow container */
+        .slideshow-container {
+          width: 100vw;
+          height: 100vh - 145px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Caption text */
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 100.5s;
+        }
+        
+        @keyframes fade {
+          from {opacity: 100} 
+          to {opacity: 100}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .text {font-size: 11px}
+        }
+        </style>
+    <body>
+        <nav class="navbarp d-flex justify-content-center pt-5">
+            <div class="logo">
+                <a href="/index.html"><img src="/images/schoolLogo.png" alt="Mzamomtsha Primary School logo"></a>
+            </div>
+           
+            <ul class="nav-links-1">
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <div class="menu-1">
+                    <li><a class="nav-link1" href="/index.html"  style="color: white; font-style:italic;">Home</a></li>
+                    <li><a class="nav-link1" href="/pages/aboutUsPage.html">About</a></li>
+                    <li><a class="nav-link1" href="/pages/eventsPage.html"  >Events</a></li>
+                    <li><a class="nav-link1" href="/pages/faqPage.html">FAQ</a></li>
+                    <li><a class="nav-link1" href="/pages/contactUsPage.html">Contact-Us</a></li>
+                    <li><a class="nav-link1" href="/pages/GamingPage.html">GamingPage</a></li>
+                    <li><a class="nav-link1 dontate-button" href="/pages/donatePage.html" >Donate</a></li>
+                    <li><a href="/pages/Login page.html">Login</a></li>
+                    
+                </div>
+            </ul>
+        </nav>
+        <!-- <section class="slide-window" id="slideset3">
+            <div class="slide-window-content" >
+                <h1 class="content-item-1" > 
+                    <div class="welcome-content">
+                        <div class="home-cont">WELCOME</div>  
+                        <div class="home-cont">TO</div>
+                        <div class="home-cont">MZAMOMTSHA PRIMARY SCHOOL</div>
+                    </div> 
+                </h1>
+                <h3 class="content-item-2">ENTER TO LEARN. LEAVE TO SERVE</h3>
+            </div>
+        </section> -->
+
+        <section>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="img-slide">
+                        <img src="/images/banner5.jpg" alt="pic" class="img-slide-d" >
+                    </div>
+                    <div class="text">
+
+                        <h1 class="content-item-1" > 
+                            <div class="welcome-content">
+                                <div class="home-cont infor-sty">WELCOME</div>  
+                                <div class="home-cont infor-sty">TO</div>
+                                <div class="home-cont infor-sty">MZAMOMTSHA PRIMARY SCHOOL</div>
+                            </div> 
+                        </h1>
+                        <h3 class="content-item-2 infor-sty">ENTER TO LEARN. LEAVE TO SERVE</h3>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="img-slide">
+                        <img src="/images/banner4.jpg" alt="pic" class="img-slide-d" >
+                    </div>
+                    <div class="text">
+
+                        <h1 class="content-item-1" > 
+                            <div class="welcome-content">
+                                <div class="home-cont infor-sty">WELCOME</div>  
+                                <div class="home-cont infor-sty">TO</div>
+                                <div class="home-cont infor-sty">MZAMOMTSHA PRIMARY SCHOOL</div>
+                            </div> 
+                        </h1>
+                        <h3 class="content-item-2 infor-sty">ENTER TO LEARN. LEAVE TO SERVE</h3>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="img-slide">
+                        <img src="/images/banner6.jpg" alt="pic" class="img-slide-d" >
+                    </div>
+                    <div class="text">
+
+                        <h1 class="content-item-1" > 
+                            <div class="welcome-content">
+                                <div class="home-cont infor-sty">WELCOME</div>  
+                                <div class="home-cont infor-sty">TO</div>
+                                <div class="home-cont infor-sty">MZAMOMTSHA PRIMARY SCHOOL</div>
+                            </div> 
+                        </h1>
+                        <h3 class="content-item-2 infor-sty">ENTER TO LEARN. LEAVE TO SERVE</h3>
+                    </div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="img-slide">
+                        <img src="/images/banner3.jpg" alt="pic" class="img-slide-d" >
+                    </div>
+                    <div class="text">
+
+                        <h1 class="content-item-1" > 
+                            <div class="welcome-content">
+                                <div class="home-cont infor-sty">WELCOME</div>  
+                                <div class="home-cont infor-sty">TO</div>
+                                <div class="home-cont infor-sty">MZAMOMTSHA PRIMARY SCHOOL</div>
+                            </div> 
+                        </h1>
+                        <h3 class="content-item-2 infor-sty">ENTER TO LEARN. LEAVE TO SERVE</h3>
+                    </div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="img-slide">
+                        <img src="/images/Homepage1.jpeg" alt="pic" class="img-slide-d"  >
+                    </div>
+                    <div class="text">
+
+                        <h1 class="content-item-1" > 
+                            <div class="welcome-content">
+                                <div class="home-cont">WELCOME</div>  
+                                <div class="home-cont">TO</div>
+                                <div class="home-cont">MZAMOMTSHA PRIMARY SCHOOL</div>
+                            </div> 
+                        </h1>
+                        <h3 class="content-item-2" style="color: #ffff;">ENTER TO LEARN. LEAVE TO SERVE</h3>
+                    </div>
+                </div>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                
+                </div>
+        </section>
+
+        <section>
+            <div class="news_latest container">
+                <div class="news_header">
+                    <h2> <span style="font-style: italic;"> Latest </span><span style="text-transform: uppercase; color: #17775fb0;">News</span> </h2>
+                </div>
+                <div class="news1 row">
+                    <div class="news_card">
+                        <div class="news_card-img">
+                            <img class="fluid" src="/images/MicrosoftTeams-image.jpg" alt="">
+                        </div>
+                        <h5>Shoes donated at Mzamomtsha</h5>
+                        <p style="font-size: 13px;">
+                            10 February 2022
+                        </p>
+                        <p>
+                            Today Samaritans's feet donated 200 pair of shoes to Mzamomtsha Primary School. The organizaton leader Mr. Mnqasela said "Our responsibility is to give hope to our children and inspire them to do better and be better. Every child has a dream, they all want to succeed. The only secret is education. We do everything in our power to make education fashionable in our communities." 
+                        </p>
+                    </div>
+                    
+                    
+                    <div class="news_card">
+                        <div class="news_card-img">
+                            <img class="fluid" src="/images/Robotics (1).jpg" alt="">
+                        </div>
+                        <h5>School opens world of robotics to the underprivileged</h5>
+                        <p style="font-size: 13px;">
+                            22 August 2022
+                        </p>
+                        <p>
+                            Cape Town - The recent success of the World Robot Olympiad (WRO) Western Cape regional competition won’t only see winners going to the nationals, but has also opened an opportunity for underprivileged children to be introduced to this fast-growing sport. <span><a href="https://www.iol.co.za/weekend-argus/lifestyle/school-opens-world-of-robotics-to-the-underprivileged-1e788ccc-ee34-4d92-ae0f-c075dadbf07f" target="_blank">read more...</a></span>
+                        </p>
+                    </div>
+                    
+                    
+                    <div class="news_card">
+                        <div class="news_card-img">
+                            <img class="fluid" src="/images/news1.jpg" alt="">
+                        </div>
+                        
+                        <h5>Diversity celebrated at Christel House derby</h5>
+                        <p style="font-size: 13px;">
+                            27 September 2022
+                        </p>
+                        <p>
+                            Hundreds of learners “across the wealth divide” came together for a Derby at Christel House SA in Ottery on Heritage Day.
+
+                            Adri Marais, Chief Executive Officer (CEO) at Christel House, said five schools across the Cape joined together to learn about heritage and citizenship. <span><a href="https://www.news24.com/news24/community-newspaper/peoples-post/diversity-celebrated-at-christel-house-derby-20220927" target="_blank">read more...</a></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <footer>
+           
+            <div class="address bx">
+                <h3 class="block-1"><i class="fa-sharp fa-solid fa-location-dot"></i> Physical Address</h3>
+                <p>49 Valangentambo Street</p>
+                <p>Driftsands</p>
+                <p>Cape Town</p>
+                <p>7100</p>
+                <p>Western Cape</p>
+                <p>South Africa </p>
+            </div>
+            <div class="contact-details bx">
+                <h3 class="block-1"><i class="fa-solid fa-address-card"></i> Contact Details</h3>
+                <p><i class="fa fa-phone"></i> 021 328 3932</p>
+                <p><i class="fa fa-envelope"></i> office@mzamomtsha.co.za</p>
+            </div>
+            <div class="social-media bx">
+                <h3 class="block-1"><i class="fa-solid fa-comments"></i> Social Media:</h3>
+                <p><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i> Facebook</a></p>
+                <p><a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i> Instagram</a></p>
+                <p><a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a></p>
+            </div>
+            
+        </footer>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+            //   let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+            //   for (i = 0; i < dots.length; i++) {
+            //     dots[i].className = dots[i].className.replace(" active", "");
+            //   }
+              slides[slideIndex-1].style.display = "block";  
+            //   dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 6000); // Change image every 2 seconds
+            }
+            </script>
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- styles -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="/styles/style.css" rel="stylesheet">
+        <link href="/styles/event.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+        <title>Events Page</title>
+    </head>
+
+    <body>
+      <nav class="navbarp d-flex justify-content-center pt-5">
+        <div class="logo">
+            <a href="/index.html"><img src="/images/schoolLogo.png" alt="Mzamomtsha Primary School logo"></a>
+        </div>
+       
+        <ul class="nav-links-1">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu-1">
+              <li><a class="nav-link1" href="/index.html">Home</a></li>
+              <li><a class="nav-link1" href="/pages/aboutUsPage.html">About</a></li>
+              <li><a class="nav-link1" href="/pages/eventsPage.html"    style="color: white; font-style:italic;">Events</a></li>
+              <li><a class="nav-link1" href="/pages/faqPage.html">FAQ</a></li>
+              <li><a class="nav-link1" href="/pages/contactUsPage.html">Contact-Us</a></li>
+              <li><a href="/pages/GamingPage.html">Gaming</a></li>
+              <li><a class="nav-link1 dontate-button" href="/pages/donatePage.html" >Donate</a></li>
+              <li><a href="/pages/Login page.html">Login</a></li>
+            </div>
+        </ul>
+    </nav>
+        <main>
+
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/images/istockphoto-1421287127-612x612.jpg" class=" w-10 h-10 event-slide" alt="..." style="object-fit: cover;">
+              </div>
+              <div class="carousel-item ">
+                <img src="/images/istockphoto-803172342-612x612.jpg"  class=" w-10 h-10 event-slide" alt="...">
+              </div>
+              <div  class="carousel-item">
+                <img src="/images/istockphoto-973322110-612x612.jpg" class=" w-10 h-10 event-slide"  alt=""> 
+              </div>
+              <div  class="carousel-item">
+                <img src="/images/istockphoto-1217170029-612x612.jpg" class=" w-10 h-10 event-slide"  alt=""> 
+              </div>
+            </div>
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon  btn btn-success" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon btn btn-success " aria-hidden="true"></span>
+              <span class="visually-hidden  ">Next</span>
+            </button>
+          </div>
+
+
+          <div class="container">
+                <div id="for-dona">
+                  <h2 class="mission-header">UPCOMING EVENTS</h2>
+                </div>
+                <div class="event-container">
+                  <div class="event-card">
+                    <img class="fluid" src="/images/sportspicture.jpg" alt="kids sitting on stairs">
+                    <div class="card-info">
+                      <h3>Learn more</h3>
+                    </div>
+                    <div class="card-content">
+                      <h3>ATHLETICS</h3>
+                      <hr>
+                      <P>Event:Inter-schools</P>
+                      <p>Date: 18 March 2023</p>
+                      <p>Time: 14:00</p>
+                      <p>Place: Sports Ground</p>
+                    </div>
+                  </div>
+          
+                  <div class="event-card">
+                    <img class="fluid" src="/images/concert (1).jpg" alt="kids sitting on stairs">
+                    <div class="card-info">
+                      <h3>Learn more</h3>
+                    </div>
+                    <div class="card-content">
+                      <h3>CULTURAL DAY</h3>
+                      <hr>
+                      <P>This an opportunity to celebrate the diversity that exists within your community.</P>
+                      <p>Date: 03 March 2023</p>
+                      <p>Time: After 1st Interval</P>
+                    </div>
+                  </div>
+          
+                  <div class="event-card">
+                    <img class="fluid" src="/images/R.jpg" alt="kids sitting on stairs">
+                    <div class="card-info">
+                      <h3>Learn more</h3>
+                    </div>
+                    <div class="card-content">
+                      <h3>RUGBY TOURNAMENT</h3>
+                      <hr>
+                      <p>Date: 17-18 March 2023</p>
+                      <p>Time: 14:00</p>
+                      <p>Place: Driftsands Sports Ground</P>
+                    </div>
+                  </div>
+                </div>
+          </div>
+            
+        </main>
+
+        <footer>
+           
+          <div class="address bx">
+              <h3 class="block-1"><i class="fa-sharp fa-solid fa-location-dot"></i> Physical Address</h3>
+              <p>49 Valangentambo Street</p>
+              <p>Driftsands</p>
+              <p>Cape Town</p>
+              <p>7100</p>
+              <p>Western Cape</p>
+              <p>South Africa </p>
+          </div>
+          <div class="contact-details bx">
+              <h3 class="block-1"><i class="fa-solid fa-address-card"></i> Contact Details</h3>
+              <p><i class="fa fa-phone"></i> 021 328 3932</p>
+              <p><i class="fa fa-envelope"></i> office@mzamomtsha.co.za</p>
+          </div>
+          <div class="social-media bx">
+              <h3 class="block-1"><i class="fa-solid fa-comments"></i> Social Media:</h3>
+              <p><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i> Facebook</a></p>
+              <p><a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i> Instagram</a></p>
+              <p><a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a></p>
+          </div>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script src="/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+
+</html>
+

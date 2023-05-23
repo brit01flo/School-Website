@@ -1,0 +1,700 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ *                          GOOGLE FONT                            *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */ 
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+:root {
+    /* colors */
+    --darkblue:#17775fb0;
+    --white: #ffffff;
+    --grey: rgb(61, 115, 146);
+    --hearder: rgb(90, 145, 228);
+    --donate-color: rgb(36, 104, 167);
+
+    /* font */
+    --PTSerif: 'Merriweather';
+}
+mission-container-content
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+    
+a {
+    text-decoration: none;
+}
+    
+li {
+    list-style: none;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+
+    min-height: 100VH; /* FOR STICKY FOOTER*/
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ *                          NAVIGATION BAR                         *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */ 
+.navbarp {
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: var(--darkblue);
+    color: white;
+    box-shadow: 5px 5px 5px var(--grey) ;
+}
+
+.nav-links-1{
+    flex-grow: 2;
+}
+    
+.nav-link1 {
+    color: black;
+    font-weight: bold;
+    font-size: bold;
+}
+
+.active-nav{
+    color: white;
+    font-style: italic;
+}
+ 
+.logo {
+    position: relative;
+    flex-grow: 1;
+    top: -25px;
+}
+
+.logo a img {
+    position: relative;
+    /* height: 70px; */
+    z-index: 100;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ *                          NAVBAR MENU                            *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */ 
+.menu-1 {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.nav-links-1 a:hover {
+    color: white;
+    list-style:lower-latin;
+}
+
+.menu-1 li {
+    padding: 5px 14px;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ *                          DROPDOWN MENU                          *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */ 
+
+input[type=checkbox]{
+    display: none;
+} 
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ *                              body                               *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */ 
+/* .slide-window-img{
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+} */
+
+
+ 
+.slide-window{
+    background-image:  linear-gradient(rgba(66, 62, 62, 0), rgba(0, 10, 0, 0.7)), url("/images/Homepage1.jpeg");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw; 
+    height: calc(100vh - 154px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    z-index: -1;
+}
+
+.slide-window-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-window-content > .content-item-1,.content-item-2 {
+    position: relative;
+    padding: 40px;
+    margin: 5px;
+    color: rgb(185, 72, 72) ;
+    /* opacity: 0.8; */
+}
+
+
+
+.welcome-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    position: relative;
+    animation-delay: 0s;
+    animation: wel 2s ;
+}
+
+
+
+@keyframes wel {
+    0% {top: -50px;}
+    100% {top: 0px;}
+}
+
+.slide-window-content > .content-item-1{
+    font-size:clamp(1rem, 4vw, 5rem);
+    font-family: 'Gloock';
+    color: rgb(255, 255, 255);
+}
+
+.slide-window-content > .content-item-2{
+    font-size:clamp(1rem, 2vw, 4rem);
+    font-family: 'Dancing Script';
+    color: rgb(255, 255, 255);
+    position: relative;
+    animation-delay: 0s;
+    animation: l 2.2s ;
+}
+
+@keyframes l {
+    0% {left: -50px;}
+    100% {left: 0px;}
+}
+
+.dontate-button{
+    position: relative;
+    background-color: var(--donate-color);
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 38px 20px;
+    animation: anim 5s infinite;
+}
+
+@keyframes anim {
+    0%{ left: 0px;}
+    100%{ left : 20px;}
+}
+
+.dontate-button:hover{
+    background-color: rgb(32, 81, 155);
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ *                             LATEST NEWS                         *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */ 
+
+ .news_latest {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .news_header{
+    font-family: 'mulish';
+    border-left: 3px solid  var(--hearder);
+    padding-left: 10px;
+    margin-top: 20px;
+    position: relative;
+    animation: headerdaly 1.2s ease-in-out;
+    animation-delay: 0s;
+ }
+
+ .news1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: scale(0.1);
+    transition: all 1s ease-in-out;
+ }
+
+ .active{
+    opacity: 1;
+    transform: scale(1);
+ }
+
+ .news_card{
+    max-width: max(200px, 300px);
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    background-color:  whitesmoke;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+ }
+
+ .news_card img{
+    width: 100%;
+ }
+
+ .news_card h5{
+    font-weight: bolder;
+    color: var(--darkblue);
+ }
+
+ .news_card h5:hover{
+    color: rgba(0, 0, 0, 0.2);
+ }
+
+ .news_card p{
+    font-size: 15px;
+    color: grey;
+ }
+ .news_card-img{
+    width: max;
+    margin: 0;
+    padding: 0;
+ }
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ *                              MISSION                            *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */ 
+.mission-container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: 40px 0px;
+}
+
+.mission-header{
+    font-family: 'mulish';
+    border-left: 3px solid  var(--hearder);
+    padding-left: 10px;
+    position: relative;
+    animation: headerdaly 1.2s ease-in-out;
+    animation-delay: 0s;
+}
+
+@keyframes headerdaly {
+    0% {top: -50px;}
+    100%{top: 0px;}
+}
+
+.mission-container-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.mission-container-content p{
+    position: relative;
+    width: 70%;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    font-family: var(--PTSerif);
+    font-size: large;
+    /* width: clamp(7, 4vw, 80%); */
+    box-shadow: 5px 5px 5px var(--grey);
+}
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ *                                FOOTER                           *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */ 
+
+
+footer{
+    position: sticky;
+    top: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: var(--darkblue);
+    padding: 10px 0px; 
+}
+
+.block-1{
+    margin: 20px 0px;
+    color: white;
+}
+
+footer h3{
+    font-size: 18px;
+}
+
+footer p{
+    color: white;
+    margin: 3px;
+    font-size: 17px;
+}
+
+.social-media div a {
+    color: white;
+}
+
+.social-media div a:hover {
+    color: rgb(0, 195, 255);
+}
+
+.fa-whatsapp{
+    color: #006600;
+}
+ 
+.fa-instagram{
+    color: darkred;
+}
+ .social-media a{
+    color: white;
+ }
+
+ .bx{
+    padding: 0 50px;
+ }
+
+.social-media bx:last-child
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ *                       APPLYING MEDIA QUERIES                    *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */ 
+.events{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px ;
+}
+
+.upcoming-event{
+    margin: 10px;
+    width: 600px;
+    height: 500px;
+}
+
+.event-pics{
+    width: 600px;
+    height: 500px;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ *                       APPLYING MEDIA QUERIES                    *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */ 
+.content-container-ab{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px ;
+    margin-bottom: 40px ;
+}
+
+/* .b-block-1{
+    margin: 10px;
+    width: 600px;
+    height: 600px;
+} */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px ;
+    margin-bottom: 40px ;
+}
+
+
+
+.about-cont{
+    width: 600px;
+    height: 500px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ *                            DONATE FORM                          *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+ #for-dona{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 35px;
+}
+
+.f-con-don{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.bank-d{
+    margin: 20px;
+}
+
+.check-1{
+    border: 1px solid rgb(72, 255, 0);
+}
+
+.f-con-don-1{
+    margin: 10px;
+}
+
+.block-1-1{
+    margin: 20px;
+}
+
+
+.donate-slogan{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.donate-option{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+}
+
+.donate-item-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: clamp(300px, 3vw, 400px);
+    margin: 10px;
+}
+
+.donate-p{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 0px;
+    height: 300px;
+}
+
+.donate-infor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: var(--PTSerif);
+}
+
+.donate-b-givengain{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: large;
+    background-color: var(--donate-color);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+.content-container-ab{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 30px ;
+}
+
+.about-cont{
+   width: 600px;
+   height: 400px;
+}
+
+.abtn-button{
+    width: 7vw;
+    height: 40px;
+    background-color: rgb(36, 104, 167);
+    color: white;
+    border: none;
+    margin-bottom: 100px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ *                                 FAQ                             *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */ 
+
+
+.for-dona-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.for-dona-2{ 
+    width: 90%;
+}
+
+details{
+    border: none;
+}
+
+details:hover{
+    box-shadow: 5px 5px 5px var(--grey);
+}
+
+.for-dona-s{
+    border: 2px solid;
+    background-color: var(--darkblue);
+    color:rgb(255, 255, 255);
+    padding: 20px ;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: large;
+}
+
+.for-dona-s:hover{
+    box-shadow: 5px 5px 5px var(--grey);
+
+}
+
+.for-dona-a{
+    padding: 20px ;
+    font-size: large;
+    /* font-weight: bold; */
+    font-family:var(--PTSerif);
+    position: relative;
+    animation-delay: 0s;
+    animation: identifier 2s ;
+
+}
+
+@keyframes identifier {
+    0% {top: -20px;}
+    100% {top: 0px;}
+}
+
+.bkg-0{
+    margin: 2px;
+    border-color: var(--grey);
+}
+.bkg-2{
+    margin: 2px;
+    border-color: var(--grey);
+}
+
+.bkg-1{
+    margin: 2px;
+    border-color: var(--grey);
+}
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ *                       APPLYING MEDIA QUERIES                    *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */ 
+@media (max-width: 998px) {
+    .menu-1 { 
+        display:none;
+        position: absolute;
+        background-color: var(--darkblue);
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+    
+    .menu-1 li:hover {
+        display: inline-block;
+        background-color: var(--darkblue);
+        transition: 0.3s ease;
+    }
+
+    .menu-1 li + li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked ~ .menu-1{
+        display: block;
+        z-index: 2;
+    }
+        
+    .hamburger {
+        display: block;
+    }
+        
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+        border: 1px solid grey;
+    }
+        
+    .dropdown li:hover {
+        background-color: var(--darkblue);
+    }
+
+
+    @media (max-width: 768px) {
+        .slide-window-content > h1,h2 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            padding: 40px;
+            margin: 5px;
+            color: rgb(0, 0, 0) ;
+            opacity: 0.4;
+        }
+        
+        .slide-window-content > h1{
+            text-size-adjust: 100px;
+        }
+    }
+}
+
